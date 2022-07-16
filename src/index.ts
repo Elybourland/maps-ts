@@ -4,8 +4,12 @@ import { Company } from "./Company";
 
 // parcel index.html in cmd line to run in browser
 
-const user = new User();
-console.log(user);
+const map = document.getElementById('map');
+new google.maps.Map(map as HTMLElement, {
+  zoom: 1,
+  center: {
+    lat: 0,
+    lng: 0
+  }
+});
 
-const company = new Company();
-console.log(company);
